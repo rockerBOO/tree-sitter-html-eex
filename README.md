@@ -38,6 +38,7 @@ Then we need some queries for nvim-treesitter.
 `~/.config/nvim/queries/html_eex/injections.scm`
 
 ```scheme
+;inherits: html
 ((template) @eex)
 ```
 

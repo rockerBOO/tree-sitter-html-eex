@@ -23,6 +23,11 @@
     }
   },
   {
+    "type": "comment",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "doctype",
     "named": true,
     "fields": {}
@@ -35,6 +40,10 @@
       "multiple": true,
       "required": true,
       "types": [
+        {
+          "type": "comment",
+          "named": true
+        },
         {
           "type": "doctype",
           "named": true
@@ -65,6 +74,10 @@
         },
         {
           "type": "style_element",
+          "named": true
+        },
+        {
+          "type": "template",
           "named": true
         },
         {
@@ -113,6 +126,10 @@
       "required": false,
       "types": [
         {
+          "type": "comment",
+          "named": true
+        },
+        {
           "type": "doctype",
           "named": true
         },
@@ -133,6 +150,10 @@
           "named": true
         },
         {
+          "type": "template",
+          "named": true
+        },
+        {
           "type": "text",
           "named": true
         }
@@ -144,11 +165,15 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
+      "multiple": true,
       "required": false,
       "types": [
         {
           "type": "attribute_value",
+          "named": true
+        },
+        {
+          "type": "template",
           "named": true
         }
       ]
@@ -239,7 +264,16 @@
     }
   },
   {
+    "type": "template",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "\"",
+    "named": false
+  },
+  {
+    "type": "%>",
     "named": false
   },
   {
@@ -256,6 +290,14 @@
   },
   {
     "type": "<!",
+    "named": false
+  },
+  {
+    "type": "<%",
+    "named": false
+  },
+  {
+    "type": "<%#",
     "named": false
   },
   {
@@ -276,10 +318,6 @@
   },
   {
     "type": "attribute_value",
-    "named": true
-  },
-  {
-    "type": "comment",
     "named": true
   },
   {

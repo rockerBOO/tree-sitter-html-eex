@@ -364,3 +364,27 @@ Template inside attributes
           (template))))
     (end_tag
       (tag_name))))
+
+======================================
+Complex eex inside
+======================================
+<div class="error <%= if length(errors) == 0 do %>hidden<%= end %>">
+  <%= Enum.map(errors, fn error -> if Map.has_key?(error,
+  :email) do error.email end) %>
+</div>
+---
+(fragment
+  (element
+    (start_tag
+      (tag_name)
+      (attribute
+        (attribute_name)
+        (quoted_attribute_value
+          (attribute_value)
+					(template)
+					(attribute_value)
+          (template))))
+    (template)
+    (end_tag
+      (tag_name))))
+

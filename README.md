@@ -20,7 +20,7 @@ local parser_config =
 
 parser_config.html_eex = {
 	install_info = {
-    url = "https://github.com/rockerBOO/tree-sitter-html-eex",
+		url = "https://github.com/rockerBOO/tree-sitter-html-eex",
 		files = { "src/parser.c", "src/scanner.cc" },
 	},
 	maintainers = {  "@rockerBOO" },
